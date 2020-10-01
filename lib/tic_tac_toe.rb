@@ -94,7 +94,7 @@ class TicTacToe
       won? || draw?
     end
 
-    def winner(board)
+    def winner
       if !won?(board)
         return nil
       else WIN_COMBINATIONS.each do |win_combo|
