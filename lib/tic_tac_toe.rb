@@ -111,5 +111,5 @@ class TicTacToe
     end
   end
 
-#newgame = TicTacToe.new
-#newgame.play
+display_board(board)
+play(board)
