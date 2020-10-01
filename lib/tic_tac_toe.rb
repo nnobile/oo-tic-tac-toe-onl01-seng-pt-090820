@@ -95,17 +95,7 @@ class TicTacToe
     end
 
     def winner
-      if !won?(board)
-        return nil
-      else WIN_COMBINATIONS.each do |win_combo|
-        if check_win_combination?(board, 'X', win_combo)
-          return 'X'
-        elsif check_win_combination?(board, 'O', win_combo)
-          return 'O'
-        end
-      end
-    end
-    end
+      won? @board
 
     def play
       while !over?
